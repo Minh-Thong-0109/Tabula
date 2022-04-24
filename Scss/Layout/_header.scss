@@ -1,0 +1,97 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  .menu {
+    width: 100%;
+    .logo {
+      img {
+        width: 100%;
+      }
+    }
+    .menu-toggler {
+      i {
+        color: $text-color-title-2;
+        font-size: 5rem;
+      }
+    }
+    .navbar-title {
+      justify-content: center;
+      align-items: center;
+      .nav-list {
+        justify-content: space-around;
+      }
+      .nav-list {
+        justify-content: space-around;
+        li {
+          a {
+            @include font(1rem, 500, 1rem, 0.1rem, 0.1rem, $text-color);
+            display: inline;
+            transition: all 0.2s ease-in-out;
+          }
+          i {
+            @include font(1rem, 500, 1rem, 0.1rem, 0.1rem, $text-color);
+            transition: all 0.2s ease-in-out;
+          }
+
+          &:hover a {
+            color: $text-color-title-2;
+          }
+        }
+      }
+      button {
+        @include button-style-1;
+        i {
+          color: $text-color-title-1;
+          padding: 0 0.5rem;
+        }
+        span {
+          @include font(1rem, 400, 1rem, 0, 0, $text-color-title-1);
+        }
+        &:hover {
+          @include button-style-1-hover;
+          i,
+          span {
+            color: $text-color-title-2;
+          }
+        }
+      }
+      .social-icon {
+        justify-content: left;
+        align-items: center;
+        i {
+          margin: 0 0.2rem;
+          padding: 0.2rem;
+          @include font(1.2rem, 400, 1.2rem, 0, 0, $text-color);
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            @include font(1.2rem, 400, 1.2rem, 0, 0, $text-color-title-2);
+          }
+        }
+      }
+    }
+    @include responsive(SM) {
+      .navbar-title {
+        background-color: $bg-color;
+        flex-direction: column;
+        .nav-list {
+          justify-content: left;
+          width: 20rem;
+          margin-right: auto;
+          li {
+            padding: 3rem 2rem;
+            a {
+              @include font(2.5rem, 500, 1rem, 0.1rem, 0.1rem, $text-color);
+            }
+          }
+        }
+        button {
+          justify-content: left;
+          width: 20rem;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

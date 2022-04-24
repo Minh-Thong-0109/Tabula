@@ -1,0 +1,77 @@
+footer {
+  background-image: url(../../Img/footer_background.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .footer {
+    .footer-item {
+      margin: 5rem 0 15rem 0;
+      @include responsive(SM) {
+        margin: 2rem 0;
+      }
+      h2 {
+        @include font(2rem, 600, 2rem, 0.2rem, 0, $text-color-title-1);
+        margin-bottom: 2rem;
+      }
+      i {
+        color: $text-color-title-1;
+        padding-right: 0.5rem;
+      }
+      .contact-icon {
+        i {
+          padding: 2rem 1rem 1rem 0;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $text-color-hover-2;
+          }
+        }
+      }
+      span {
+        @include font(1rem, 400, 2rem, 0.1rem, 0.05rem, $text-color-title-1);
+        padding: 0.5rem 0;
+        transition: all 0.3s ease-in-out;
+      }
+      div {
+        padding: 0.3rem 0;
+      }
+      ul {
+        li {
+          padding: 0.3rem 0;
+          border-bottom: 1px solid $border-color;
+          a {
+            cursor: pointer;
+            &:hover {
+              span {
+                color: $text-color-hover;
+              }
+            }
+          }
+        }
+      }
+      input {
+        padding: 0.8rem 2rem;
+        width: 18rem;
+        background-color: $bg-color-3;
+        border: 1px solid $border-color-2;
+        text-align: center;
+        color: $text-color-title-1;
+        border-radius: 1.5rem;
+        &::placeholder {
+          color: $text-color-title-1;
+        }
+      }
+      button {
+        @include button-style-3;
+        width: 18rem;
+        @include font(1rem, 500, 1rem, 0, 0.2rem, $text-color);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          @include button-style-3-hover;
+          color: $text-color-title-1;
+        }
+      }
+    }
+  }
+}

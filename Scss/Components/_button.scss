@@ -1,0 +1,35 @@
+@mixin button-style-1 {
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid $bg-color;
+    background-color: $text-color-title-2;
+}
+
+@mixin button-style-1-hover {
+    background-color: $text-color-title-1;
+    border: 1px solid $text-color-title-2;
+}
+
+@mixin button-style-2 {
+    padding: 1rem 3rem;
+    border-radius: 1.4rem;
+    border: 1px solid $bg-color;
+    background-color: $text-color-title-2;
+}
+
+@mixin button-style-2-hover {
+    background-color: $text-color-title-1;
+    border: 1px solid $text-color-title-2;
+}
+
+@mixin button-style-3 {
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid $border-color-3;
+    background-color: $bg-color;
+}
+
+@mixin button-style-3-hover {
+    background-color: $bg-color-3;
+    border: 1px solid $border-color-4;
+}

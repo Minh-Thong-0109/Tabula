@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tabula</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awsome CDN 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- ============================================== -->
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-md menu row container">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-2 col-sm-6 col-3">
+                <a class="logo navbar-brand" href="#"><img src="./Img/crest.png"></a>
+            </div>
+            <!-- Toggler/collapsibe Button -->
+            <div class="menu-toggler">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="fas fa-list"></i>
+                </button>
+            </div>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse navbar-title row col-lg-9 col-md-10" id="collapsibleNavbar">
+                <ul class="navbar-nav nav-list col-md-7">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elements</a>
+                    </li>
+                </ul>
+                <div class="button col-md-3">
+                    <button>
+                        <i class="fas fa-phone"></i>
+                        <span>(+1) 555 234-8765</span>
+                    </button>
+                </div>
+                <div class="social-icon col-md-2 row">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ============================================== -->
+    <!-- Carousel -->
+    <section id="carousel">
+        <div class="carousel container row">
+            <div class="carousel-title col-md-6 col-12">
+                <h3>About us</h3>
+                <h1>The language teaching experts</h1>
+            </div>
+            <div class="carousel-img col-md-6 col-12">
+                <img src="./Img/hero_team.png">
+            </div>
+        </div>
+    </section>
+    <!-- ============================================== -->
+    <!-- Middle background -->
+    <section id="mid-background">
+    </section>
+    <!-- ============================================== -->
+    <!-- Feature -->
+    <section id="feature">
+        <div class="feature">
+            <div id="teacher-list" class="feature-content container row">
+            </div>
+        </div>
+    </section>
+    <!-- ============================================== -->
+    <!-- Form -->
+    <section id="form">
+        <div class="form container row">
+            <div class="form-img col-md-6 col-sm-12 col-12">
+                <img src="./Img/conatct_inner.png">
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+                <div class="form-content">
+                    <div class="form-header">
+                        <h1>Find Your Course</h1>
+                    </div>
+                    <div class="form-body row">
+                        <!-- Name -->
+                        <div class="col-md-6 col-12">
+                            <form>
+                                <div class="input-group mb-3 input-group-sm">
+                                    <div class="input-group-prepend">
+                                        <span class="input-icon input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input id="txtName" type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Mail -->
+                        <div class="col-md-6 col-12">
+                            <form>
+                                <div class="input-group mb-3 input-group-sm">
+                                    <div class="input-group-prepend">
+                                        <span class="input-icon input-group-text"><i class="fas fa-envelope"></i></span>
+                                    </div>
+                                    <input id="txtMail" type="text" class="form-control" placeholder="Mail">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Course -->
+                        <div class="col-12">
+                            <form>
+                                <div class="input-group mb-3 input-group-sm">
+                                    <div class="input-group-prepend">
+                                        <span class="input-icon input-group-text">
+                                            <i class="fas fa-graduation-cap"></i></span>
+                                    </div>
+                                    <select class="form-control" id="txtCourse">
+                                        <option>English</option>
+                                        <option>French</option>
+                                        <option>Spanish</option>
+                                        <option>German</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Message -->
+                        <div class="col-12">
+                            <form>
+                                <div id="txtMessage" class="input-group mb-3 input-group-sm">
+                                    <div class="input-group-prepend">
+                                        <span class="input-icon input-icon-ect input-group-text">
+                                            <i class="fas fa-comment-alt"></i></span>
+                                    </div>
+                                    <textarea class="form-control form-control-ect" placeholder="Message"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="form-button col-12">
+                        <button id="btnSend">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- ============================================== -->
+    <!-- Footer -->
+    <footer>
+        <div class="footer row container">
+            <!-- Contact us -->
+            <div class="footer-item col-md-3 col-sm-6 col-12">
+                <h2>Contact us</h2>
+                <div>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Franklin St, Greenpoint Ave</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>+2342 5446 67</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-clock"></i>
+                        <span>Monday - Friday: 8 AM - 5 PM</span>
+                    </div>
+                    <div class="contact-icon">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Quick Links -->
+            <div class="footer-item col-md-3 col-sm-6 col-12">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>
+                        <a><span>Home</span></a>
+                    </li>
+                    <li>
+                        <a><span>Courses</span></a>
+                    </li>
+                    <li>
+                        <a><span>Schedule</span></a>
+                    </li>
+                    <li>
+                        <a><span>Blog</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- About -->
+            <div class="footer-item col-md-3 col-sm-6 col-12">
+                <h2>About</h2>
+                <ul>
+                    <li>
+                        <a><span>About Us</span></a>
+                    </li>
+                    <li>
+                        <a><span>Events</span></a>
+                    </li>
+                    <li>
+                        <a><span>Get Quote</span></a>
+                    </li>
+                    <li>
+                        <a><span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Newsletter -->
+            <div class="footer-item col-md-3 col-sm-6 col-12">
+                <h2>Newsletter</h2>
+                <div>
+                    <div>
+                        <input id="txtYouremail" type="text" placeholder="Your email">
+                    </div>
+                    <div>
+                        <button id="btnSend">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ============================================== -->
+    <!-- JS -->
+    <div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <!-- Axios CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+            integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- MAiN JS -->
+        <script src="./JS/Service/services.js"></script>
+        <script src="./JS/main.js"></script>
+    </div>
+</body>
+
+</html>

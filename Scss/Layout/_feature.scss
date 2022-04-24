@@ -1,0 +1,59 @@
+#feature {
+    background-color: $bg-color-2;
+    background-image: url(../../Img/Wave_White_bottom_right_shape_01.png);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-top: -0.3rem;
+  .feature {
+    .feature-content {
+      justify-content: space-around;
+      align-items: center;
+      .feature-item {
+        margin-top: 5rem;
+        .card {
+          overflow: hidden;
+          position: relative;
+          background-color: $bg-color;
+          border-radius: 0.7rem;
+          border: none;
+          transition: all 0.5s ease-in-out;
+          .card-img-top {
+            width: 100%;
+            transition: all 0.8s ease-in-out;
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+          .card-body {
+            width: 100%;
+            text-align: center;
+            h4 {
+              @include font(
+                0.9rem,
+                500,
+                1.1rem,
+                0,
+                0.1rem,
+                $text-color-title-2
+              );
+              margin: 2rem 0 0.5rem 0;
+            }
+            h2 {
+              @include font(2rem, 600, 2rem, 0.2rem, 0, $text-color);
+              margin-bottom: 2rem;
+            }
+            p {
+              @include font(1rem, 400, 2rem, 0.1rem, 0.05rem, $text-color);
+              margin-bottom: 2rem;
+            }
+          }
+          &:hover{
+            @include shadow(0.5rem, 0.5rem, 2rem, 0.5rem, $shadow);
+          }
+        }
+      }
+    }
+  }
+}

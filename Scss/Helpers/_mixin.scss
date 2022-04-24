@@ -1,0 +1,36 @@
+@mixin responsive($canvas) {
+  @if $canvas == XS {
+    @media only screen and (max-width: $XS) {
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (max-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (max-width: $MD) {
+      @content;
+    }
+  } @else if $canvas == LG {
+    @media only screen and (min-width: $LG) {
+      @content;
+    }
+  } @else if $canvas == XXL {
+    @media only screen and (min-width: $XXL) {
+      @content;
+    }
+  }
+}
+
+@mixin font($size, $weight, $lineHeight, $wordSpacing, $letterSpacing, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+  word-spacing: $wordSpacing;
+  letter-spacing: $letterSpacing;
+  color: $color;
+}
+
+@mixin shadow($x, $y, $blur, $spread, $color) {
+  box-shadow: $x $y $blur $spread $color;
+}

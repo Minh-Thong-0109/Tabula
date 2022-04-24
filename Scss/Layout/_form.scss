@@ -1,0 +1,87 @@
+#form {
+  background-image: url(../../Img/accent_bottom_wave_01.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  .form {
+    margin-top: 10rem;
+    @include responsive(SM) {
+      flex-direction: column-reverse;
+    }
+    .form-img {
+      margin-bottom: 2rem;
+      @include responsive(SM) {
+        margin: 3rem auto;
+        img {
+          width: 70%;
+        }
+      }
+      img {
+        width: 90%;
+      }
+    }
+    .form-content {
+      width: 70%;
+      padding: 5rem 2rem;
+      margin-top: 4rem;
+      border: none;
+      border-radius: 1rem;
+      background-color: $bg-color;
+      @include shadow(0.5rem, 0.5rem, 2rem, 0.5rem, $shadow);
+      @include responsive(SM) {
+        margin: 4rem auto;
+      }
+      .form-header {
+        text-align: center;
+        h1 {
+          @include font(3rem, 600, 2.5rem, 0.2rem, 0.1rem, $text-color);
+          margin-bottom: 5rem;
+        }
+      }
+      .form-body {
+        form {
+          .input-group {
+            margin-bottom: 1rem;
+            .input-icon {
+              background-color: $bg-color;
+              border-radius: 1.2rem 0 0 1.2rem;
+              border-right: none;
+              i {
+                color: $text-color-title-2;
+                padding: 0 0.25rem;
+              }
+            }
+            .form-control {
+              border-left: none;
+              padding: 1.5rem 0.25rem;
+              border-radius: 0 1.2rem 1.2rem 0;
+            }
+            .input-icon-ect {
+              border-radius: 1rem 0 0 1rem;
+              border-right: none;
+            }
+            .form-control-ect {
+              border-left: none;
+              vertical-align: top;
+              padding: 0.75rem 0.25rem;
+              border-radius: 0 1rem 1rem 0;
+            }
+          }
+        }
+      }
+      .form-button {
+        margin-left: -15px;
+        button {
+          @include button-style-2;
+          text-transform: uppercase;
+          @include font(1rem, 600, 1rem, 0.1rem, 0.05rem, $text-color-title-1);
+
+          &:hover {
+            @include button-style-2-hover;
+            color: $text-color-title-2;
+          }
+        }
+      }
+    }
+  }
+}
